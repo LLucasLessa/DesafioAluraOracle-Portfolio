@@ -14,21 +14,23 @@
 </head>
 
 <body>
-  <section class="flex-df default-section menu-section">
-    <header class="flex-df header-logo">
-      <img src="assets\vector.png">
-      <h3 class="menu__title">Lucas Lessa</h3>
-    </header>
-    <nav class="flex-df nav-menu">
-      <ul class="flex-df">
-        <li class="menu-iten"><a href="#">Sobre mim</a></li>
-        <li class="menu-iten"><a href="#">Skills</a></li>
-        <li class="menu-iten"><a href="#">Hobbies</a></li>
-        <li class="menu-iten"><a href="#">Formação</a></li>
-        <li class="menu-iten"><a href="#">Projetos</a></li>
-      </ul>
-      <li><a href="#" class="menu-iten-contato">lucaslessagomes@gmail.com</a></li>
-    </nav>
+  <section class="menu-section" id="botaosubir">
+    <div class="default-section flex-df menu-div">
+      <header class="flex-df header-logo">
+        <img src="assets\vector.png">
+        <h3 class="menu__title">Lucas Lessa</h3>
+      </header>
+      <nav class="flex-df nav-menu">
+        <ul class="flex-df">
+          <li class="menu-iten"><a href="#sobremim">Sobre mim</a></li>
+          <li class="menu-iten"><a href="#skillsmenu">Skills</a></li>
+          <li class="menu-iten"><a href="#hobbiesmenu">Hobbies</a></li>
+          <li class="menu-iten"><a href="#formacaomenu">Formação</a></li>
+          <li class="menu-iten"><a href="#projetosmenu">Projetos</a></li>
+        </ul>
+        <li><a href="#contatomenu" class="menu-iten-contato">lucaslessagomes@gmail.com</a></li>
+      </nav>
+    </div>
   </section>
   <section class="default-section apresentacao-section">
     <div>
@@ -36,7 +38,7 @@
       <h3 class="descricao-apresentacao">Eu curso Análise e desenvolvimento de sisteemas e atualmente estou participando
         do projeto Oracle ONE na Alura.</h3>
       <ul class="links-apresentacao">
-        <li><a href="">Github</a><img src="assets\arrow.png"></li>
+        <li><a href="" id="sobremim">Github</a><img src="assets\arrow.png"></li>
         <li><a href="">LinkedIn</a><img src="assets\arrow.png"></li>
         <li><a href="">Instagram</a><img src="assets\arrow.png"></li>
         <li><a href="">Curriculo</a><img src="assets\arrow.png"></li>
@@ -50,8 +52,14 @@
     <div class="sobre-content default-section">
       <div class="width-custon">
         <h3 class="about__title">Sobre mim</h3>
-        <p class="about__paragraph">Atualmente estou estudando Análise e Desenvolvimento de Sistemas (ADS), mergulhando fundo em programação, desenvolvimento de software e tecnologias inovadoras. Sou apaixonado por aprender e enfrentar desafios que expandam minhas habilidades em uma área que está sempre evoluindo.</p>
-        <p class="about__paragraph">Estou ansioso para entrar no mercado de trabalho e em busca da minha primeira oportunidade profissional. Quero aplicar minha paixão e conhecimento em tecnologia em uma equipe dinâmica e inovadora, contribuindo significativamente para o sucesso da empresa. Estou aberto a fazer novas conexões e explorar colaborações, sempre buscando crescer junto com outros profissionais da tecnologia.</p>
+        <p class="about__paragraph">Atualmente estou estudando Análise e Desenvolvimento de Sistemas (ADS), mergulhando
+          fundo em programação, desenvolvimento de software e tecnologias inovadoras. Sou apaixonado por aprender e
+          enfrentar desafios que expandam minhas habilidades em uma área que está sempre evoluindo.</p>
+        <p class="about__paragraph" id="skillsmenu">Estou ansioso para entrar no mercado de trabalho e em busca da minha
+          primeira
+          oportunidade profissional. Quero aplicar minha paixão e conhecimento em tecnologia em uma equipe dinâmica e
+          inovadora, contribuindo significativamente para o sucesso da empresa. Estou aberto a fazer novas conexões e
+          explorar colaborações, sempre buscando crescer junto com outros profissionais da tecnologia.</p>
       </div>
     </div>
   </section>
@@ -89,7 +97,7 @@
       <div class="skills__box">
         <ul>
           <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
-          <li class="skills__name">CSS</li>
+          <li class="skills__name" id="hobbiesmenu">CSS</li>
         </ul>
       </div>
     </div>
@@ -135,7 +143,7 @@
       <div class="hobbies__box">
         <ul>
           <li class="hobbies__img"> <img src="assets/gym-32.png" alt=""> </li>
-          <li class="hobbies__name">Academia</li>
+          <li class="hobbies__name" id="formacaomenu">Academia</li>
         </ul>
       </div>
     </div>
@@ -145,7 +153,7 @@
     <div class="academic__courses">
       <div class="academic__courses__box">
         <ul class="academic__courses__list">
-          <li class="academic__courses__item__img"><img src="assets/unopar_8f493bde5b.png"></li>
+          <li class="academic__courses__item__img"><img src="assets/unopar_8f493bde5b.png" id="projetosmenu"></li>
           <li class="academic__courses__item__title">
             <h4>ADS - Unopar EAD</h4>
           </li>
@@ -167,6 +175,46 @@
         </ul>
       </div>
     </div>
+  </section>
+  <section class="experiencia-section">
+    <h3 class="h3-experiencia">Experiência Profissional</h3>
+    <h4>Em Construção...</h4>
+  </section>
+  <section class="contato-section" id="contatomenu">
+    <div class="div-contato default-section">
+      <div><img src="assets/contact_image.png"></div>
+      <form class="form-contatos" action="">
+        <h3>Contato</h3>
+        <p>Quer entrar em contato comigo?</p>
+        <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível</p>
+        <div class="div-contatos">
+          <input required type="text" name="nome" id="nomeid" class="input-contato">
+          <label for="nome">Nome</label>
+        </div>
+        <div class="div-contatos">
+          <input required type="text" name="email" id="emailid" class="input-contato">
+          <label for="email">Email</label>
+        </div>
+        <div class="div-contatos">
+          <input required type="text" name="assunto" id="assuntoid" class="input-contato">
+          <label for="assunto">Assunto</label>
+        </div>
+        <div class="div-contatos div-mensagem">
+          <textarea required name="mensagem" id="mensagemid" cols="30" rows="6"></textarea>
+          <label for="mensagem">Mensagem</label>
+        </div>
+        <div>
+          <button class="botao-form" type="submit">Enviar Mensagem</button>
+        </div>
+      </form>
+    </div>
+  </section>
+  <section class="botaosubir-section">
+    <a href="#botaosubir">
+      <div class="botaosubir">
+        <p>🠕</p>
+      </div>
+    </a>
   </section>
 </body>
 

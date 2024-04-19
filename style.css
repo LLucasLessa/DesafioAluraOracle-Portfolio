@@ -9,7 +9,7 @@ body{
 }
 :root{
   --corTextoPreto: #464646;
-  --fundoClarinho: #EAF2FD;
+  --fundoClarinho: #84bfc3;
   --grayClaro: #EDEDED;
 }
 
@@ -39,6 +39,10 @@ h1, h2, h3, h4{
 
 .menu-section{
   padding: 38px 0 38px 0;
+  background-color: var(--fundoClarinho);
+}
+
+.menu-div{
   justify-content: space-between;
   align-items: center;
 }
@@ -187,4 +191,125 @@ h4{
 .academic__courses__item__subtitle p{
   font-size: 16px;
   font-weight: 300;
+}
+
+/*Formacao*/
+
+/*Experiencias*/
+
+.experiencia-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 38px 0px 38px 0px;
+  gap: 20px
+}
+
+.h3-experiencia{
+  font-size: 32px;
+}
+
+/*experiencia*/
+
+/*contato*/
+
+.contato-section{
+  background-color: var(--fundoClarinho);
+  padding: 82px 0px 82px 0px;
+
+}
+
+.div-contato{
+  display: flex; 
+}
+
+.form-contatos input, .form-contatos textarea{
+  width: 100%;
+  padding: 25px 10px 10px 10px;
+  margin-top: 28px;
+  border: 0;
+  border-bottom: 3px solid rgb(200, 200, 200);
+  outline: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-contatos{
+  margin-left: 16px;
+}
+
+.div-contatos{
+  position: relative;
+}
+
+
+.div-contatos label{
+  font-size: 16px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: rgb(150, 150, 150);
+  cursor: text;
+  transition: 0.3s ease-in-out;
+}
+
+.div-mensagem label{
+  top: 60px;
+}
+
+.form-contatos input:focus,
+.form-contatos textarea:focus,
+.form-contatos input:valid,
+.form-contatos textarea:valid{
+  border-bottom: 3px solid #2A7AE4 ;
+}
+
+.form-contatos input:focus ~ label,
+.form-contatos textarea:focus ~ label,
+.form-contatos input:valid ~ label,
+.form-contatos textarea:valid ~ label{
+  transform: translateY(-24px);
+  font-size: 12px;
+  color: #2A7AE4;
+}
+
+.botao-form{
+  padding: 16px;
+  background-color: #2A7AE4;
+  border: 0;
+  color: white;
+  margin-top: 43px;
+
+}
+
+.botao-form:hover{
+  background-color: #0f4790;
+  transition: 0.1s ease-in-out;
+}
+
+/*contato*/
+
+/*botaoSubir*/
+
+.botaosubir{
+  position: fixed;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #2A7AE4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+  opacity: 30%;
+}
+.botaosubir-section a{
+  color: black;
+}
+
+.botaosubir:hover{
+  opacity: 100%;
 }
