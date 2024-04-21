@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  <script src="script.js"></script>
+  <script src="./script.js"></script>
   <title>Portfolio Alura</title>
 </head>
 
@@ -17,7 +17,7 @@
   <section class="menu-section" id="botaosubir">
     <div class="default-section flex-df menu-div">
       <header class="flex-df header-logo">
-        <img src="assets\vector.png">
+        <img class="img-logo" src="assets\vector.png">
         <h3 class="menu__title">Lucas Lessa</h3>
       </header>
       <nav class="flex-df nav-menu">
@@ -35,13 +35,16 @@
   <section class="default-section apresentacao-section">
     <div>
       <h2>Olá, meu nome é Lucas Lessa e construo páginas Web</h2>
-      <h3 class="descricao-apresentacao">Eu curso Análise e desenvolvimento de sisteemas e atualmente estou participando
+      <h3 class="descricao-apresentacao">Eu curso Análise e desenvolvimento de sistemas e atualmente estou participando
         do projeto Oracle ONE na Alura.</h3>
       <ul class="links-apresentacao">
-        <li><a href="" id="sobremim">Github</a><img src="assets\arrow.png"></li>
-        <li><a href="">LinkedIn</a><img src="assets\arrow.png"></li>
-        <li><a href="">Instagram</a><img src="assets\arrow.png"></li>
-        <li><a href="">Curriculo</a><img src="assets\arrow.png"></li>
+        <li><a href="https://github.com/LLucasLessa" target="_blank" id="sobremim">Github</a><img
+            src="assets\arrow.png"></li>
+        <li><a href="https://www.linkedin.com/in/lucaslessagomes/" target="_blank">LinkedIn</a><img
+            src="assets\arrow.png"></li>
+        <li><a href="https://www.instagram.com/lucas_lessag?igsh=bTBlbDg4ZGN1cThu" target="_blank">Instagram</a><img
+            src="assets\arrow.png"></li>
+        <li><a href="curriculo.html" target="_blank">Curriculo</a><img src="assets\arrow.png"></li>
       </ul>
     </div>
     <div>
@@ -182,9 +185,9 @@
   </section>
   <section class="contato-section" id="contatomenu">
     <div class="div-contato default-section">
-      <div><img src="assets/contact_image.png"></div>
-      <form class="form-contatos" action="">
-        <h3>Contato</h3>
+      <div><img class="img-contato" src="assets/contact_image.png"></div>
+      <form class="form-contatos" id="form">
+        <h3 class="contato-h3">Contato</h3>
         <p>Quer entrar em contato comigo?</p>
         <p>Preencha o formulário ao lado e entrarei em contato o mais rápido possível</p>
         <div class="div-contatos">
@@ -192,7 +195,7 @@
           <label for="nome">Nome</label>
         </div>
         <div class="div-contatos">
-          <input required type="text" name="email" id="emailid" class="input-contato">
+          <input required type="email" name="email" id="emailid" class="input-contato">
           <label for="email">Email</label>
         </div>
         <div class="div-contatos">
@@ -209,6 +212,10 @@
       </form>
     </div>
   </section>
+  <footer class="footer">
+    <h5>Desenvolvido por Lucas Lessa</h5>
+    <p>2024</p>
+  </footer>
   <section class="botaosubir-section">
     <a href="#botaosubir">
       <div class="botaosubir">
